@@ -20,8 +20,8 @@ class ProductFactory(factory.django.DjangoModelFactory):
         model = Product
 
     # name = 'test_product'
-    # description = 'test_description'
-    # is_digital = True
+    description = 'test_description'
+    is_digital = True
     price = 100.00
     brand = factory.SubFactory(BrandFactory)
     category = factory.SubFactory(CategoryFactory)
